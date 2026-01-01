@@ -305,6 +305,50 @@ header.hero p{
     flex-direction:column;
     align-items:flex-start;
   }
+    @media (max-width:640px){
+  header, main, footer{
+    margin:12px;
+    padding:12px;
+    border-radius:12px;
+  }
+
+  /* Header layout */
+  header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+  }
+
+  /* Nav container */
+  header nav{
+    width:100%;
+  }
+
+  /* Nav links visible & stacked */
+  header nav ul{
+    display:flex;              /* 🔥 important */
+    flex-direction:column;
+    gap:10px;
+    width:100%;
+    padding-top:10px;
+  }
+
+  header nav a{
+    width:100%;
+    text-align:left;
+    padding:10px 14px;
+    font-size:15px;
+  }
+
+  .projects{
+    display:block;
+  }
+
+  .project-card{
+    padding:12px;
+  }
+}
+
 
   .nav-links{
     display:flex;
@@ -338,3 +382,4 @@ a:focus, button:focus, input:focus{
   border-radius:8px;
 
 }
+
