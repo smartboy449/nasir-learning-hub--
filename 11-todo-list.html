@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Todo List</title>
+       <link rel="stylesheet" href="11-todo-list.css">
+       <script src="11-todo-list.js"></script>
+    </head>
+    <body>
+        <p>Todo List</p>
+        <div class="todo-row todo-input-row">
+        <input type="text" onkeydown="onkeybtn(event)" class="todoinput" placeholder="Add a To-do item" required>
+        <input type="date" onkeydown="onkeybtn(event)" class="dueDate" required>
+        <button onclick="addTodo()" class="add-todo-button" >Add</button>
+        <div id="todoListOutput" class=""></div>
+        </div>
+    </body>
+  
+</html>
